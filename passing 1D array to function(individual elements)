@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+void print(int a); // function prototype
+
+int main()
+{
+	int i,j,ary1[4][3]={{1,2,3},{2,4,6},{3,6,9},{3,2,1}};
+	for(i = 0; i < 4; i++)
+	{
+		for(j = 0; j < 3; j++)
+			print( ary1[i][j] );
+		cout << endl;
+	} // end for
+	return 0;
+} // end main
+
+void print(int a)
+{
+	cout << a << "\t";
+} // end print
