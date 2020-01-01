@@ -1,0 +1,44 @@
+#include<iostream>
+
+using namespace std;
+
+void input();
+void arrow();
+
+int main()
+{
+	input();
+	return 0;
+	
+}
+
+void input()
+{
+	//Array declaration and initialization
+	char husband[5] = {'N','a','i','m','\0'};
+	char wife[] = {'A','i','n','\0'};
+	char father[6] = "Ahmad";
+	char mother[] = "Salmah";
+	char grandmother[8] = {"Faridah"};
+	char child[10];
+	
+	cout << "Suggestion : " ;
+	cin.getline(child,10);
+	cout << endl << "\t\t\tOUR HOME" << endl;
+	cout << "--------------------------------------------------------------------------------" << endl;
+	cout << grandmother << " " ;
+	arrow();
+	cout << " " << father << " + " << mother << " ";
+	arrow();
+	cout << " " << husband << " + " << wife << " ";
+	arrow();
+	cout << " " << child;
+	 
+}
+
+void arrow()
+{
+	for( int i=1;i<=3;i++)
+		cout << " - ";
+	cout << " > ";
+}
